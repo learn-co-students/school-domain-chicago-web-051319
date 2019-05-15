@@ -25,6 +25,7 @@ class School
   def grade(grade)
     @roster.values_at(grade).flatten
   end
+  
   def sort
     @roster=@roster.sort.to_h
     @roster.each do |key,value|
