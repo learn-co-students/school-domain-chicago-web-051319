@@ -30,10 +30,6 @@ class School
     @roster.each do |key,value|
       @roster[key]=value.sort
     end
+
   end
 end
-school = School.new("Bayside High School")
-school.add_student("Zach Morris", 9)
-school.add_student("Zach Marris", 9)
-school.roster
-p school.sort
